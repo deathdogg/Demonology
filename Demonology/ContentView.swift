@@ -8,17 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
+	@Environment(GameManager.self) var gm
+	var body: some View {
+		TabView {
+			SoulCollecting()
+				.tabItem {
+					Text("Soul Collecting")
+				}
+		}
+		.onAppear {
+			gm.updateTimer = Timer.scheduledTimer(withTimeInterval: gm.tickInterval, repeats: true) {
+				_ in
+				gm.update()
+			}
+		}
+	}
 }
 
-#Preview {
-    ContentView()
-}

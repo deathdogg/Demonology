@@ -11,6 +11,10 @@
 		C500770C2B621909002590FA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C500770B2B621909002590FA /* ContentView.swift */; };
 		C500770E2B62190A002590FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C500770D2B62190A002590FA /* Assets.xcassets */; };
 		C50077112B62190A002590FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C50077102B62190A002590FA /* Preview Assets.xcassets */; };
+		C5B23FF32B621A41009BCA62 /* Demon Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B23FF22B621A41009BCA62 /* Demon Management.swift */; };
+		C5B23FF52B621A4C009BCA62 /* Soul Management.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B23FF42B621A4C009BCA62 /* Soul Management.swift */; };
+		C5B23FF82B62207C009BCA62 /* SoulCollecting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B23FF72B62207C009BCA62 /* SoulCollecting.swift */; };
+		C5B23FFB2B6220EC009BCA62 /* Game Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B23FFA2B6220EC009BCA62 /* Game Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		C500770B2B621909002590FA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C500770D2B62190A002590FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C50077102B62190A002590FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5B23FF22B621A41009BCA62 /* Demon Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Demon Management.swift"; sourceTree = "<group>"; };
+		C5B23FF42B621A4C009BCA62 /* Soul Management.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Soul Management.swift"; sourceTree = "<group>"; };
+		C5B23FF72B62207C009BCA62 /* SoulCollecting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoulCollecting.swift; sourceTree = "<group>"; };
+		C5B23FFA2B6220EC009BCA62 /* Game Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Game Manager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,13 @@
 		C50077082B621909002590FA /* Demonology */ = {
 			isa = PBXGroup;
 			children = (
+				C5B23FF12B621A26009BCA62 /* Souls */,
+				C5B23FF02B621A12009BCA62 /* Demons */,
 				C50077092B621909002590FA /* DemonologyApp.swift */,
 				C500770B2B621909002590FA /* ContentView.swift */,
 				C500770D2B62190A002590FA /* Assets.xcassets */,
 				C500770F2B62190A002590FA /* Preview Content */,
+				C5B23FFA2B6220EC009BCA62 /* Game Manager.swift */,
 			);
 			path = Demonology;
 			sourceTree = "<group>";
@@ -65,6 +76,31 @@
 				C50077102B62190A002590FA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5B23FF02B621A12009BCA62 /* Demons */ = {
+			isa = PBXGroup;
+			children = (
+				C5B23FF22B621A41009BCA62 /* Demon Management.swift */,
+			);
+			path = Demons;
+			sourceTree = "<group>";
+		};
+		C5B23FF12B621A26009BCA62 /* Souls */ = {
+			isa = PBXGroup;
+			children = (
+				C5B23FF62B62205D009BCA62 /* Soul Collecting */,
+				C5B23FF42B621A4C009BCA62 /* Soul Management.swift */,
+			);
+			path = Souls;
+			sourceTree = "<group>";
+		};
+		C5B23FF62B62205D009BCA62 /* Soul Collecting */ = {
+			isa = PBXGroup;
+			children = (
+				C5B23FF72B62207C009BCA62 /* SoulCollecting.swift */,
+			);
+			path = "Soul Collecting";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B23FF52B621A4C009BCA62 /* Soul Management.swift in Sources */,
 				C500770C2B621909002590FA /* ContentView.swift in Sources */,
 				C500770A2B621909002590FA /* DemonologyApp.swift in Sources */,
+				C5B23FF82B62207C009BCA62 /* SoulCollecting.swift in Sources */,
+				C5B23FFB2B6220EC009BCA62 /* Game Manager.swift in Sources */,
+				C5B23FF32B621A41009BCA62 /* Demon Management.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
